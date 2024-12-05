@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    color: antiquewhite;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.main {
+    max-width: 280px;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+}
+
+button{
+    font-weight: bold !important;
+    margin-top: 30px;
+}
+
+.poster{
+    margin: 20px;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    object-fit:contain;
+    overflow: hidden; /* Ensures no overflow during scaling */
+  transition: transform 0.4s ease; /* Smooth transition for scaling */
+}
+
+.dom_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+/* .HoverEff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 350px;
+    width: 250px;
+    overflow: hidden;
+    transition: 0.7 ease;
+} */
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease; /* Smooth scaling effect for the image */
+  }
+
+  .poster:hover {
+    transform: scale(1.17); /* Scale the container proportionally */
+  }
+  h4{
+    font-size: small;
+    padding: 15px;
+  }
